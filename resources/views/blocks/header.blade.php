@@ -19,44 +19,24 @@
         <li class="line">&nbsp;</li>
         <li><a href="{{ route('gioithieu') }}" class="font_custom ">Giới thiệu</a></li>
         <li class="line">&nbsp;</li>
-        <li><a href="javascript:void(0)" class="font_custom ">Sản phẩm</a>
+        <li><a href="javascript:void(0)" class="font_custom ">Trần Thạch Cao</a>
           <ul>
             <?php 
             $loaisp = DB::table('category')->get();
             ?>
             @foreach($loaisp as $row)
+		@if($row->id < 4)
             <li><a href="{!! route('loaisp', [$row->slug, $row->id]) !!}">{!! $row->name !!}</a> </li>
+@endif
             @endforeach
           </ul>
-        </li>
+        </li><li class="line">&nbsp;</li>
+        <li><a href="{!! route('loaisp', ['vach-ngan-thach-cao', 4]) !!}" class="font_custom ">Vách ngăn</a></li>
         <li class="line">&nbsp;</li>
         <li><a href="http://anhungthinh.com.vn/category/tu-van-thiet-ke-kien-truc/" target="_blank" class="font_custom ">Tư vấn – Thiết kế kiến trúc</a></li>
         
          <li class="line">&nbsp;</li>
-         <li><a href="http://anhungthinh.com.vn/category/thi-cong-xay-dung/" target="_blank">Thi công xây dựng</a></li>
-         <li class="line">&nbsp;</li>
-		 <li>
-          <a href="javascript:void(0)" class="font_custom ">Thi công đá</a>
-          <ul>
-           
-            <li><a href="{{ route('news-list', 'thi-cong-bep') }}">Thi công bếp</a> </li>
-			<li><a href="{{ route('news-list', 'thi-cong-cau-thang') }}">Thi công cầu thang</a> </li>
-			<li><a href="{{ route('news-list', 'thi-cong-mat-tien') }}">Thi công mặt tiền</a> </li>
-			
-          </ul>
-        </li> 
-		  <li class="line">&nbsp;</li>
-        <li>
-          <a href="javascript:void(0)" class="font_custom ">Bảng giá</a>
-          <ul>
-            <?php 
-            $loaisp = DB::table('category')->get();
-            ?>
-            @foreach($loaisp as $row)
-            <li><a href="{!! route('loaisp', [$row->slug, $row->id]) !!}">{!! $row->name !!}</a> </li>
-            @endforeach
-          </ul>
-        </li>      
+         <li><a href="http://anhungthinh.com.vn/category/thi-cong-xay-dung/" target="_blank">Thi công xây dựng</a></li>              
         <li class="line">&nbsp;</li>
         <li><a href="{{ route('lienhe') }}" class="font_custom ">Liên hệ</a></li>
         

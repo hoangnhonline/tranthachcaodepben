@@ -38,7 +38,7 @@
              @endforeach
           </div>
           <div class="boxcontentabout">
-            <div class="nameaboutnb"><a href="{{ route('gioithieu') }}">Đá Granite và Marble</a></div>
+            <div class="nameaboutnb"><a href="{{ route('gioithieu') }}">Trần thạch cao đẹp - bền</a></div>
             <div class="contentnb">{{ $about->description }}</div>
             <span><a href="{{ route('gioithieu') }}"> Chi tiết >> </a></span> </div>
         </div>
