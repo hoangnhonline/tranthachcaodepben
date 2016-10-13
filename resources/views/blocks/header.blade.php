@@ -1,5 +1,5 @@
-<div id="header" style="background:url('{{ URL::asset('images/16543300.png') }}') no-repeat;background-size: 100% 100%;">
-    <div class="banner"> <img data-original="{{ URL::asset('images/an-hung-thinh-banner.png') }}" style="width:100%;" alt="banner dagranit.vn" class="lazy"/>
+<div id="header">
+    <div class="banner"> <img src="{{ URL::asset('images/an-hung-thinh-banner.png') }}" style="width:100%;" alt="banner dagranit.vn" />
       <div class="logo_header"> <a href="{{ route('home') }}"> <img class="lazy" data-original="{{ Helper::showImage($settingArr['logo']) }}" height="100"> </a> </div>
       <div class="hotline" >{{ $settingArr['hot_line'] }}</div>
       <div class="box_icon">
