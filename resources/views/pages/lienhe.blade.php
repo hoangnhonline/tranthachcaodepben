@@ -44,10 +44,7 @@
                      <div class="pad-contact">
                         <textarea name="noidung" id="noidung" class="form-control" rows="3" required="" oninvalid="this.setCustomValidity('Nội dung')" oninput="setCustomValidity('')"></textarea>
                      </div>
-                     <div class="pad-contact">
-                        <input style="width:78%; float:left;" name="captcha" type="text" id="captcha" class="form-control" placeholder="Mã xác nhận">
-                        <img src="{{ captcha_src() }}" style="float:left;margin-left:10px;height: 34px; border-radius: 5px;">
-                     </div>
+
                      <div class="clear"></div>
                      <div class="pad-contact" style="text-align: center;">
                         <button type="button" class="button" onclick="js_submit()">Gửi</button>
