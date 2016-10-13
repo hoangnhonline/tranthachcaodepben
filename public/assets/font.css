@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* vui lòng không xóa 2 font RobotoCondensedRegular và RobotoBoldCondensed*/
+@font-face {
+    font-family: 'RobotoCondensedRegular';
+    src: url('font/RobotoCondensedRegular/RobotoCondensedRegular.eot');
+    src: url('font/RobotoCondensedRegular/RobotoCondensedRegular.eot') format('embedded-opentype'),
+         url('font/RobotoCondensedRegular/RobotoCondensedRegular.woff2') format('woff2'),
+         url('font/RobotoCondensedRegular/RobotoCondensedRegular.woff') format('woff'),
+         url('font/RobotoCondensedRegular/RobotoCondensedRegular.ttf') format('truetype'),
+         url('font/RobotoCondensedRegular/RobotoCondensedRegular.svg#RobotoCondensedRegular') format('svg');
+}
+@font-face {
+    font-family: 'RobotoBoldCondensed';
+    src: url('font/RobotoBoldCondensed/RobotoBoldCondensed.eot');
+    src: url('font/RobotoBoldCondensed/RobotoBoldCondensed.eot') format('embedded-opentype'),
+         url('font/RobotoBoldCondensed/RobotoBoldCondensed.woff2') format('woff2'),
+         url('font/RobotoBoldCondensed/RobotoBoldCondensed.woff') format('woff'),
+         url('font/RobotoBoldCondensed/RobotoBoldCondensed.ttf') format('truetype'),
+         url('font/RobotoBoldCondensed/RobotoBoldCondensed.svg#RobotoBoldCondensed') format('svg');
+}
+
+/******************************/
+
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('font/RobotoBold/RobotoBold.eot');
+    src: url('font/RobotoBold/RobotoBold.eot') format('embedded-opentype'),
+         url('font/RobotoBold/RobotoBold.woff2') format('woff2'),
+         url('font/RobotoBold/RobotoBold.woff') format('woff'),
+         url('font/RobotoBold/RobotoBold.ttf') format('truetype'),
+         url('font/RobotoBold/RobotoBold.svg#RobotoBold') format('svg');
+}
+
+@font-face {
+    font-family: 'UTMColossalis';
+    src: url('font/UTMColossalis/UTMColossalis.eot');
+    src: url('font/UTMColossalis/UTMColossalis.eot') format('embedded-opentype'),
+         url('font/UTMColossalis/UTMColossalis.woff2') format('woff2'),
+         url('font/UTMColossalis/UTMColossalis.woff') format('woff'),
+         url('font/UTMColossalis/UTMColossalis.ttf') format('truetype'),
+         url('font/UTMColossalis/UTMColossalis.svg#UTMColossalis') format('svg');
+}
+
+@font-face {
+    font-family: 'texgyreadventorregular';
+    src: url('font/texgyreadventorregular/texgyreadventorregular.eot');
+    src: url('font/texgyreadventorregular/texgyreadventorregular.eot') format('embedded-opentype'),
+         url('font/texgyreadventorregular/texgyreadventorregular.woff2') format('woff2'),
+         url('font/texgyreadventorregular/texgyreadventorregular.woff') format('woff'),
+         url('font/texgyreadventorregular/texgyreadventorregular.ttf') format('truetype'),
+         url('font/texgyreadventorregular/texgyreadventorregular.svg#texgyreadventorregular') format('svg');
+}
+
+@font-face {
+    font-family: 'UTMAlexander';
+    src: url('font/UTMAlexander/UTMAlexander.eot');
+    src: url('font/UTMAlexander/UTMAlexander.eot') format('embedded-opentype'),
+         url('font/UTMAlexander/UTMAlexander.woff2') format('woff2'),
+         url('font/UTMAlexander/UTMAlexander.woff') format('woff'),
+         url('font/UTMAlexander/UTMAlexander.ttf') format('truetype'),
+         url('font/UTMAlexander/UTMAlexander.svg#UTMAlexander') format('svg');
+}

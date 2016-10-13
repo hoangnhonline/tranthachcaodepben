@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*************** left mobile *************/
+.poas{ position:absolute; height:50px;
+	z-index:0px;
+	left:0px;
+	width:100%;
+	border-bottom: solid 1px #fff
+}
+
+@media(max-width: 768px){
+	.poas{ display:none;}
+}
+@media ( min-width: 321px ) and ( max-width: 601px){
+.tablet{
+	width:50%  !important;
+}
+}
+/************efect image******************/
+
+
+.big-img a{ width:100% !important; max-width:100% !important;}
+.big-img .img{ display:none;}
+.big-img .active{ display:block;}
+.img-thumb{ cursor:pointer; margin-right:5px; box-shadow: 0px 0px 4px}
+.date{ text-transform:uppercase; margin-right:20px; float:left; height:35px;}
+.luotview{ float:left; background:url(../image/view.png) no-repeat left top 4px; padding-left:20px; height:35px;}
+.donhang{
+	position: fixed;
+	top: 30%;
+	right: 4px;
+	z-index: 10001;
+	border-radius: 25px;
+	height: 50px;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px #FC0202;
+}
+.service-list th{
+	background: #0B5C3B;
+	border: solid 1px #fff;
+	height: 35px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	line-height: 35px !important;
+}
+.service-list td{ height:30px; text-align: center; line-height:30px; font-size:14px; border:solid 1px #000;}
+.service-list img{ vertical-align:middle;}
+.total-order{ text-align:right; font-family:fontavo; font-size:16px;}
+.total-order span{ color:#03F; font-size:18px;}
+@font-face {
+	font-family: "fontavo";
+	src: url("../font/fontavo/utm-avo.html");
+	src: url("../font/fontavo/utm-avo.html#iefix") format("embedded-opentype"),
+	url("../font/fontavo/utm-avo-2.html") format("woff"),
+	url("../font/fontavo/utm-avo-3.html") format("truetype"),
+	url("../font/fontavo/utm-avo-4.html") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+.catalog, .themgiohang, .dathang {
+	background:#77b432;
+	padding: 5px 9px;
+	white-space: nowrap;
+	color:#fff;
+	font-size:15px;
+	text-transform:uppercase;
+	float:left;
+	font-family: 'Roboto Condensed', sans-serif;
+	border:none;
+}
+.catalog:hover, .themgiohang:hover, .dathang:hover {
+	background: #A00;
+	cursor: pointer;
+}
+
+.pad-contact{ margin-top:2%;}
+.tbl-contact{ max-width:600px;}
+
+
+
+.box-nav{
+	width:100%;
+	max-width:300px;
+	padding: 25px 10px 10px 10px;
+	text-align:center;
+}
+.nav-title{
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+	padding:20px;
+}
+.mnav{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform:uppercase;
+	font-size:15px;
+}
+
+
+
+/* ------------effect -------------*/
+.images{ position:relative;}
+
+
+.images figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity:0;
+	background: rgba(126, 124, 124, 0.9);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	display: none !important;
+}
+
+.images span {
+	position: absolute;
+	right: 0;
+	bottom: 50%;
+	color:#fff;
+	width: 100%;
+	padding: 0 1em;
+	max-width: 100%;
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+	font-style: italic;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	display:none !important;
+}
+.item_product_menu:hover img, .item_product:hover img, .video:hover img {
+}
+
+.item_product_menu:hover figcaption::before, .item_product:hover figcaption::before, .video:hover figcaption::before {
+	opacity:1;
+	display:block;
+	transition:0.9s all;
+}
+
+.item_product_menu:hover span, .item_product:hover span, .video:hover span {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+.video_noibat{ width:100%; max-width:480px; margin:auto; margin-bottom:20px; text-align:center; background:url(../image/line.png) repeat-x bottom left;}
+.video_noibat .name{ color: #03F; font-size:18px; height:30px; line-height:30px;}
+.name_video{ text-align:center; text-align:center; height:30px; line-height:30px; font-family:fontavo; font-size:16px;}
+.hinhanh{ width:100%; max-width:500px; margin:auto; background:url(../image/line.png) repeat-x bottom left; text-align:center; font-family: 'Roboto Condensed', sans-serif;; font-size:16px; padding:20px 0px; margin-bottom:20px}
+.hinhanh .name { margin:10px 0px; height:30px; line-height:30px; font-family:simpli; font-size: 20px; text-transform:uppercase;}
+.hinhanh .from{ height:30px; line-height:30px; margin-bottom:10px;}
+#grid li img:hover{ opacity:0.7;}
+.inner{ max-width:800px; margin:auto}
+.menu_list{
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0px 20px;
+}
+.title-dk{ font-weight: bold; color:#000;}
+.contact-email{
+	box-sizing: border-box;
+	border: white 10px solid;
+	background-color: #ebebeb;
+	text-align: center;
+	padding: 5%;
+	color: #999;
+	height: 165px;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+.contact-email h3{
+	font-family:simpli;
+	font-size: 18px;
+	text-transform:uppercase;
+}
+.contact-email .email{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+}
+.contact-email:hover{ background:#BEBEBE;}
+.contact-email:hover .email{ color:#fff;}
+.stButton .stMainServices{ height:30px !important;}
+.stButton .stBubble_count{ height:42px !important}
+
+.bestseller{
+	position: absolute;
+	top: -3px;
+	width: 130px;
+	height: 130px;
+	left: -18px;
+}
+.item_product .spmoi img,.item_product  .bestseller img{ width:80%; max-width:80%; height:80%; max-height:80%; min-height:100px;;}
+
+.tbl-contacts{ max-width:600px; margin:auto;}
+
+@media(min-width: 400px and max-width:600px){
+	.tablet{ width:49%; margin-right:1%;}
+}
