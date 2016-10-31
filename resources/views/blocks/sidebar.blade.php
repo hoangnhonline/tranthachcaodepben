@@ -42,14 +42,17 @@
             <h2>Ý kiến khách hàng</h2>
           </div>
           <div class="content" id="customer-comment">
+              <?php 
+              $ykienArr = DB::table('y_kien')->orderBy('display_order')->get();
+              ?>
+              @if($ykienArr)
+              @foreach($ykienArr as $ykien)
               <div class="comment-content">
-                  <p>Đội ngũ chuyên nghiệp, tư vấn nhiệt tình. Cảm ơn AN HƯNG THỊNH đã giúp chúng tôi xây dựng những công trình tuyệt vời.</p>
-                  <span style="color:blue;float:right">Mr. Thi</span>
+                  <p>{{ $ykien->content }}</p>
+                  <span style="color:blue;float:right">{{ $ykien->name }}</span>
               </div>
-              <div class="comment-content">
-                  <p>Công ty làm việc chuyên nghiệp , kiến trúc sư lành nghề , tôi sẽ hợp tác với AN HƯNG THỊNH trong các dự án tiếp theo.</p>
-                  <span style="color:blue;float:right">Mr. Dũng</span>
-              </div>              
+              @endforeach
+              @endif              
           </div>
         </div>
         <!--HỖ TRỢ TRỰC TUYẾN-->

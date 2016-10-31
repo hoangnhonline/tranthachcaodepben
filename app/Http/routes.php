@@ -31,6 +31,14 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'backend', 'middleware' => '
         Route::post('/update', ['as' => 'tag.update', 'uses' => 'TagController@update']);
         Route::get('{id}/destroy', ['as' => 'tag.destroy', 'uses' => 'TagController@destroy']);
     });
+     Route::group(['prefix' => 'ykien'], function () {
+        Route::get('/', ['as' => 'ykien.index', 'uses' => 'YkienController@index']);
+        Route::get('/create', ['as' => 'ykien.create', 'uses' => 'YkienController@create']);
+        Route::post('/store', ['as' => 'ykien.store', 'uses' => 'YkienController@store']);
+        Route::get('{id}/edit',   ['as' => 'ykien.edit', 'uses' => 'YkienController@edit']);
+        Route::post('/update', ['as' => 'ykien.update', 'uses' => 'YkienController@update']);
+        Route::get('{id}/destroy', ['as' => 'ykien.destroy', 'uses' => 'YkienController@destroy']);
+    });
     Route::group(['prefix' => 'account'], function () {
         Route::get('/', ['as' => 'account.index', 'uses' => 'AccountController@index']);
         Route::get('/update-status/{status}/{id}', ['as' => 'account.update-status', 'uses' => 'AccountController@updateStatus']);
