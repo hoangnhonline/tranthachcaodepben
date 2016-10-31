@@ -59,6 +59,11 @@
         </a>        
       </li>
       <li class="treeview">
+        <a href="{{ route('ykien.index') }}">
+          <i class="fa fa-th"></i> <span>Ý kiến khách hàng</span>         
+        </a>        
+      </li>
+      <li class="treeview">
         <a href="{{ route('pages.index') }}">
           <i class="fa fa-th"></i> <span>Trang</span>         
         </a>        
