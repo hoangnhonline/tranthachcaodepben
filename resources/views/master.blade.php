@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trang chủ dagranit.vn - Một sản phẩm của An Hưng Thịnh</title>
+<title>Thạch cao Hưng Thịnh - Một sản phẩm của An Hưng Thịnh</title>
 <link rel="shortcut icon" type="image/x-icon" href="{{ URL::asset('images/favicon.png') }}">
 <meta name="description" content="">
 <meta name="keywords" content="">

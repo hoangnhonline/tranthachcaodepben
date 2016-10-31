@@ -25,13 +25,13 @@
             $loaisp = DB::table('category')->get();
             ?>
             @foreach($loaisp as $row)
-		@if($row->id < 4)
+		@if($row->id < 8)
             <li><a href="{!! route('loaisp', [$row->slug, $row->id]) !!}">{!! $row->name !!}</a> </li>
 @endif
             @endforeach
           </ul>
         </li><li class="line">&nbsp;</li>
-        <li><a href="{!! route('loaisp', ['vach-ngan-thach-cao', 4]) !!}" class="font_custom ">Vách ngăn</a></li>
+        <li><a href="{!! route('loaisp', ['vach-ngan-thach-cao', 8]) !!}" class="font_custom ">Vách ngăn</a></li>
         <li class="line">&nbsp;</li>
         <li><a href="http://anhungthinh.com.vn/category/tu-van-thiet-ke-kien-truc/" target="_blank" class="font_custom ">Tư vấn – Thiết kế kiến trúc</a></li>
         
