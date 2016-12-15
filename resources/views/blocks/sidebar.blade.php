@@ -116,7 +116,8 @@
             <div class="clear"></div>
           </div>
         </div>
-        
+<?php $videoArr = DB::table('video')->get(); ?>
+        @if($videoArr)
         <!--THỐNG KÊ TRUY CẬP-->
         <div class="module_left">
           <div class="title" style="z-index: 1;">
@@ -124,7 +125,7 @@
           </div>
           <div class="content" style="padding:5px 5px" >
           <?php
-          $videoArr = DB::table('video')->get();
+          
           $firstVideo = DB::table('video')->first();
           $tmp = explode('?v=', $firstVideo->youtube_url);          
            ?>
@@ -144,7 +145,7 @@
             </div>
           </div>
         </div>
-        
+        @endif
         <!--HÌNH ẢNH-->
         <div class="module_left">
           <div class="title" style="z-index: 1;">

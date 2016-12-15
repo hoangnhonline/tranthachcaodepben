@@ -155,7 +155,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        //Mews\Captcha\CaptchaServiceProvider::class,
+	//Mews\Captcha\CaptchaServiceProvider::class
 
     ],
 
@@ -203,7 +203,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Helper' => App\Helpers\Helper::class,
-        //'Captcha' => 'Mews\Captcha\Facades\Captcha',
+        //'Captcha' => Mews\Captcha\Facades\Captcha,
     ],
 
 ];
